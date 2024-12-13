@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(120deg, #f6d365, #fda085);
+      background: linear-gradient(120deg, #e0f7fa, #ffffff);
       color: #333;
     }
     .navbar {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 123, 255, 0.7);
     }
     .navbar a {
       color: white !important;
@@ -22,7 +22,7 @@
     .hero {
       text-align: center;
       padding: 50px 20px;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.9);
       margin: 30px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,14 +30,17 @@
     .content {
       padding: 30px;
     }
-    .section {
-      margin-bottom: 40px;
-      background: rgba(255, 255, 255, 0.8);
+    .row {
+      margin-bottom: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
-    .section img {
+    .card img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
@@ -46,7 +49,7 @@
     .footer {
       text-align: center;
       padding: 10px 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 123, 255, 0.8);
       color: white;
       margin-top: 30px;
     }
@@ -68,38 +71,43 @@
     <p>Here are my performance highlights and key achievements for 2024:</p>
 
     <!-- Revenue Closed -->
-    <div class="section">
-      <h3>Revenue Closed</h3>
-      <img src="assets/img/revenue_closed.png" alt="Revenue Closed">
-      <p>Achieved $2M in new business revenue, exceeding annual targets by 25%.</p>
-
-      <h3>Current Pipeline</h3>
-      <img src="assets/img/Q4_pipeline.png" alt="Current Pipeline">
-      <p>Maintained an active pipeline of $1.5M, ensuring continuous growth opportunities.</p>
-  
+     <!-- First Row: Revenue Closed and Current Pipeline -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <h3>Revenue Closed</h3>
+          <img src="assets/img/revenue_closed.png" alt="Revenue Closed">
+          <p>Achieved $2M in new business revenue, exceeding annual targets by 25%.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h3>Current Pipeline</h3>
+          <img src="assets/img/Q4_pipeline.png" alt="Current Pipeline">
+          <p>Maintained an active pipeline of $1.5M, ensuring continuous growth opportunities.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Current Pipeline -->
-    <div class="section">
-      <h3>Current Pipeline</h3>
-      <img src="assets/img/Q4_pipeline.png" alt="Current Pipeline">
-      <p>Maintained an active pipeline of $1.5M, ensuring continuous growth opportunities.</p>
-    </div>
-
-    <!-- Opportunities Created YTD -->
-    <div class="section">
-      <h3>Opportunities Created YTD</h3>
-      <img src="assets/img/opps_created.png" alt="Opportunities Created">
-      <p>Generated 45 net-new opportunities through strategic prospecting and outreach.</p>
-    </div>
-
-    <!-- First Meetings Booked YTD -->
-    <div class="section">
-      <h3>First Meetings Booked YTD</h3>
-      <img src="assets/img/first_meetings.png" alt="First Meetings Booked">
-      <p>Booked 120 first meetings, driving the top of the funnel for consistent deal flow.</p>
+    <!-- Second Row: Opportunities and Meetings -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <h3>Opportunities Created YTD</h3>
+          <img src="assets/img/opps_created.png" alt="Opportunities Created">
+          <p>Generated 45 net-new opportunities through strategic prospecting and outreach.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h3>First Meetings Booked YTD</h3>
+          <img src="assets/img/first_meetings.png" alt="First Meetings Booked">
+          <p>Booked 120 first meetings, driving the top of the funnel for consistent deal flow.</p>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <!-- Footer -->
   <footer class="footer">
